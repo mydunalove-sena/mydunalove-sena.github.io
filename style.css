@@ -593,13 +593,24 @@ button:focus-visible {
   }
 
   .hero h1 {
-    margin-bottom: 22px;
-    font-size: clamp(36px, 12vw, 50px);
-  }
+  margin-bottom: 22px;
+  font-size: clamp(36px, 12vw, 50px);
+  line-height: 1.25;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
 
   .hero h1 br {
     display: none;
   }
+  
+  .hero h1 .mobile-title-line {
+  display: block;
+}
+
+ .hero h1 .hero-name {
+  white-space: nowrap;
+}
 
   .hero-summary {
     font-size: 18px;
