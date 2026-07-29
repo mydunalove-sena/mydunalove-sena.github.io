@@ -691,6 +691,13 @@ button:focus-visible {
   overflow-wrap: normal;
 }
 
-.nowrap {
+.project-card .project-title {
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+.project-card .project-title-word {
+  display: inline-block;
   white-space: nowrap;
+  word-break: keep-all;
 }
