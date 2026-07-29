@@ -668,3 +668,21 @@ button:focus-visible {
     padding: 24px 0;
   }
 }
+.contact-title {
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+.contact-title-line {
+  display: block;
+}
+
+.contact-title-mobile-line {
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .contact-title-mobile-line {
+    display: block;
+  }
+}
