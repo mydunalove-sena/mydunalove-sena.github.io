@@ -556,7 +556,7 @@ button:focus-visible {
 
   body {
     font-size: 15px;
-    word-break: normal;
+    word-break: keep-all;
   }
 
   .container {
