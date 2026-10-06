@@ -12,6 +12,8 @@
 
   --container-width: 1120px;
   --header-height: 72px;
+  --header-offset: var(--header-height);
+  --section-space: clamp(32px, 4vw, 48px);
 
   --radius-small: 8px;
   --radius-medium: 14px;
@@ -42,7 +44,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-height) + 24px);
+  scroll-padding-top: var(--header-offset);
 }
 
 body {
@@ -96,6 +98,17 @@ h4 {
 
 .section {
   padding: 100px 0;
+}
+
+/* 앵커 오프셋은 html에서 한 번만 적용하고, 제목 여백은 섹션에서 통일합니다. */
+.section:not(.hero) {
+  padding-block: var(--section-space);
+}
+
+#about,
+#contact {
+  min-height: calc(100vh - var(--header-offset));
+  min-height: calc(100dvh - var(--header-offset));
 }
 
 .section-muted {
