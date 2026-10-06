@@ -18,6 +18,24 @@
   --radius-large: 22px;
 }
 
+.health-screens { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin-top: 24px; }
+.health-screens figure { min-width: 0; margin: 0; }
+.screen-open { width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius-small); background: var(--color-background-muted); color: var(--color-primary); font: inherit; cursor: pointer; }
+.screen-open img { width: 100%; height: auto; object-fit: contain; }
+.screen-open span { display: block; margin-top: 12px; font-weight: 700; }
+.health-screens figcaption p, .health-screen-note { color: var(--color-text-muted); font-size: 14px; }
+.health-screen-note { margin-top: 16px; }
+.screen-dialog { width: min(760px, calc(100% - 24px)); max-height: calc(100dvh - 24px); padding: 20px; border: 1px solid var(--color-border); border-radius: var(--radius-medium); color: var(--color-text); background: var(--color-surface); overflow: auto; }
+.screen-dialog::backdrop { background: rgba(21, 42, 60, 0.75); }
+.screen-dialog-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.screen-dialog-header h2 { margin: 0; font-size: 22px; color: var(--color-primary); }
+.screen-dialog-header .button { width: auto; flex-shrink: 0; }
+.screen-dialog-image { width: 100%; height: auto; object-fit: contain; }
+.screen-dialog-controls { display: flex; gap: 12px; margin-top: 20px; }
+.screen-dialog-controls .button { flex: 1; padding: 12px 8px; }
+.screen-dialog-open { overflow: hidden; }
+@media (max-width: 900px) { .health-screens { grid-template-columns: 1fr; } }
+
 * {
   box-sizing: border-box;
 }

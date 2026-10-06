@@ -235,6 +235,31 @@
               </p>
             </div>
 
+            <div class="health-screens" aria-label="My Health Log 실제 앱 화면">
+              <figure>
+                <button class="screen-open" type="button" aria-haspopup="dialog" aria-label="건강 기록 화면 확대">
+                  <img src="assets/images/my-health-log/health-record.jpg" width="1080" height="2079" alt="날짜와 건강 수치를 가림 처리한 건강 기록 입력 화면" loading="lazy">
+                  <span>화면 확대</span>
+                </button>
+                <figcaption><h4>건강 기록</h4><p>체중·혈압·수면을 입력하는 실제 앱 화면입니다.</p></figcaption>
+              </figure>
+              <figure>
+                <button class="screen-open" type="button" aria-haspopup="dialog" aria-label="PRN·증상 기록 화면 확대">
+                  <img src="assets/images/my-health-log/prn-symptoms.jpg" width="1018" height="1419" alt="약명·용량·복용 기록과 증상을 가림 처리한 필요 시 복용약 화면" loading="lazy">
+                  <span>화면 확대</span>
+                </button>
+                <figcaption><h4>PRN·증상 기록</h4><p>필요 시 복용약의 최근 기록과 연결된 증상을 확인하는 화면입니다.</p></figcaption>
+              </figure>
+              <figure>
+                <button class="screen-open" type="button" aria-haspopup="dialog" aria-label="데이터 관리 화면 확대">
+                  <img src="assets/images/my-health-log/data-management.jpg" width="1080" height="707" alt="백업 파일 저장·공유와 데이터 복원 버튼이 있는 데이터 관리 화면" loading="lazy">
+                  <span>화면 확대</span>
+                </button>
+                <figcaption><h4>데이터 관리</h4><p>백업 파일 저장·공유와 데이터 복원 기능을 제공합니다.</p></figcaption>
+              </figure>
+            </div>
+            <p class="health-screen-note">실제 앱 화면이며 개인정보는 가림 처리했습니다.</p>
+
             <div class="project-roles">
               <div class="project-role">
                 <h4>직접 수행</h4>
@@ -423,5 +448,19 @@
       </p>
     </div>
   </footer>
+  <dialog class="screen-dialog" aria-labelledby="screen-dialog-title" aria-describedby="screen-dialog-note">
+    <div class="screen-dialog-header">
+      <h2 id="screen-dialog-title"></h2>
+      <button class="button button-secondary screen-close" type="button" autofocus>닫기</button>
+    </div>
+    <p id="screen-dialog-note">실제 앱 화면이며 개인정보는 가림 처리했습니다.</p>
+    <img class="screen-dialog-image" alt="">
+    <div class="screen-dialog-controls">
+      <button class="button button-secondary screen-prev" type="button">이전 화면</button>
+      <button class="button button-secondary screen-next" type="button">다음 화면</button>
+    </div>
+    <p class="health-screen-note">← → 키로 화면 이동 · ESC로 닫기</p>
+  </dialog>
+  <script src="health-screens.js" defer></script>
 </body>
 </html>
