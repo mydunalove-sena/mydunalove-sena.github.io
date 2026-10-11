@@ -73,3 +73,16 @@
 .restored-section .web-card p{font-size:14px;margin:0;color:#42576c}
 .restored-section .web-card .project-link{width:100%;margin-top:auto;font-size:14px}
 @media(max-width:700px){.web-grid{grid-template-columns:1fr}}
+
+/* Approved real-device gallery: five equal portrait cards above website designs. */
+.device-intro{margin:0 0 18px!important;font-size:14px!important;color:#42576c}
+.device-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.restored-section .device-card{padding:18px 14px;display:flex;flex-direction:column;gap:12px}
+.device-card .version{color:#246f75;font-size:12px;font-weight:800}
+.device-card h3{font-size:19px;margin:0;letter-spacing:-.5px;white-space:nowrap}
+.device-frame{width:100%;max-width:140px;margin:0 auto;aspect-ratio:1080/2316;border:1px solid #d8e5e8;border-radius:8px;overflow:hidden;background:#fff}
+.device-frame img{display:block;width:100%;height:100%;object-fit:contain}
+.restored-section .device-card p{font-size:13px;line-height:1.6;margin:0;flex:1;word-break:keep-all;overflow-wrap:anywhere}
+.restored-section .device-open{border:0;cursor:pointer;font-family:inherit;width:100%;margin-top:auto;font-size:12px;gap:6px;padding:12px 6px;min-height:48px}
+@media(max-width:1000px) and (min-width:701px){.device-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.device-grid{grid-template-columns:1fr}.restored-section .device-card{padding:20px;gap:12px}.device-card h3{font-size:21px}.device-frame{max-width:160px}.restored-section .device-card p{font-size:14px}.restored-section .device-open{font-size:14px}}

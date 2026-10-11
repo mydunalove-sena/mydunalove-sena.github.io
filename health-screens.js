@@ -6,10 +6,10 @@
   let opener;
   function display(index) {
     current = (index + buttons.length) % buttons.length;
-    const source = buttons[current].querySelector('img');
+    const source = buttons[current].closest('.device-card')?.querySelector('img') || buttons[current].querySelector('img');
     image.src = source.getAttribute('src');
     image.alt = source.alt;
-    dialog.querySelector('h2').textContent = buttons[current].closest('figure').querySelector('h4').textContent;
+    dialog.querySelector('h2').textContent = buttons[current].closest('.device-card')?.querySelector('h3').textContent || buttons[current].closest('figure').querySelector('h4').textContent;
   }
   buttons.forEach((button, index) => button.addEventListener('click', () => {
     opener = button;
