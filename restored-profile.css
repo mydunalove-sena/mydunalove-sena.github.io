@@ -51,3 +51,25 @@
 .restored-section .health-screens figcaption p{font-size:13px;line-height:1.5}
 .restored-section .project-phone-preview{width:100px;height:auto;aspect-ratio:1080/2316;object-fit:contain;align-self:start}
 @media(max-width:500px){.restored-section .health-screens{gap:8px}.restored-section .health-screens h4{font-size:13px}.restored-section .health-screens figcaption p{font-size:12px}}
+
+/* Approved B proposal: retain project summaries and list website designs separately. */
+.restored-section .projects-grid{align-items:stretch}
+.restored-section .project-card{display:flex;flex-direction:column}
+.restored-section .health-log-layout{flex:1}
+.restored-section .project-link{margin-top:auto}
+.restored-section .project-link:hover{color:#fff}
+.restored-section .health-log-copy{display:flex;flex-direction:column}
+.restored-section .project-head{min-height:80px}
+.restored-section .project-card ul{margin-bottom:18px}
+.restored-section .project-phone-preview{height:auto;max-height:none}
+.proposal-extra{margin-top:26px}
+.proposal-extra h3{margin:0 0 14px}
+.website-heading{font-size:23px!important;margin:28px 0 16px!important}
+.web-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.restored-section .web-card{padding:20px;display:flex;flex-direction:column;gap:12px}
+.web-card .version{color:#246f75;font-size:14px;font-weight:800}
+.web-card h3{margin:0!important}
+.web-card img{width:100%;height:auto;aspect-ratio:1280/900;object-fit:contain;border:1px solid #d8e5e8;border-radius:8px;background:#fff;display:block}
+.restored-section .web-card p{font-size:14px;margin:0;color:#42576c}
+.restored-section .web-card .project-link{width:100%;margin-top:auto;font-size:14px}
+@media(max-width:700px){.web-grid{grid-template-columns:1fr}}
