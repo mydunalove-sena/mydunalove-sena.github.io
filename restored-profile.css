@@ -1,0 +1,46 @@
+/* Restore published profile content in the current navy/teal design. */
+.restored-section{padding:30px 0;scroll-margin-top:24px}
+.restored-section>.container{width:100%;margin:0}
+.restored-section .section-title{font-size:29px;line-height:1.4;margin:0 0 24px;letter-spacing:-.6px}
+.restored-section .section-title:after{content:"";display:block;width:42px;height:3px;background:#246f75;margin-top:8px;border-radius:2px}
+.restored-section .card{background:#eef8f8;border:1px solid #d8e5e8;border-radius:12px;padding:26px;min-width:0}
+.restored-section h3{font-size:21px;line-height:1.45;letter-spacing:-.4px}
+.restored-section p,.restored-section li{font-size:16px;word-break:keep-all;overflow-wrap:anywhere}
+.restored-section svg{width:42px;height:42px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.restored-section .about-card{display:grid;grid-template-columns:130px minmax(0,1fr);gap:32px;align-items:center}
+.restored-section .about-card p{margin:0}
+.restored-section .about-icon,.restored-section .skill-icon{display:flex;align-items:center;justify-content:center;background:#e0f0f0;color:#155866;border-radius:18px}
+.restored-section .about-icon{height:112px;width:112px}
+.restored-section .chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.restored-section .chip{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1px solid #cadfe1;border-radius:28px;background:#fff;font-weight:700;font-size:15px}
+.restored-section .chip svg{width:20px;height:20px;color:#246f75}
+.restored-section .skills-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.restored-section .skill-card{text-align:center;padding:26px 18px}
+.restored-section .skill-icon{width:72px;height:72px;margin:0 auto 18px}
+.restored-section .skill-card p{margin-top:12px;color:#42576c}
+.restored-section .skill-note{margin:18px 0 0;padding:16px 20px;background:#f4f7f9;border-left:3px solid #246f75;font-size:14px}
+.restored-section .career-card{display:block;padding:0;overflow:hidden}
+.restored-section .job{padding:26px;border-bottom:1px solid #d8e5e8}
+.restored-section .job:last-child{border:0;background:#f4f7f9}
+.restored-section .job-left{display:flex;gap:18px;align-items:center}
+.restored-section .job-icon{display:flex;justify-content:center;align-items:center;width:58px;height:58px;flex:0 0 58px;border-radius:50%;background:#0b2349;color:#fff}
+.restored-section .job-icon svg{width:32px;height:32px}
+.restored-section .job-icon.gray{background:#526174}
+.restored-section .company{font-size:18px;color:#42576c}
+.restored-section .date{font-size:15px;color:#246f75;font-weight:700;margin-top:4px}
+.restored-section .job ul{margin:18px 0 0 76px;padding-left:20px}
+.restored-section li+li{margin-top:6px}
+.restored-section .projects-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.restored-section .project-summary{font-size:14px;color:#42576c;margin:12px 0 18px}
+.restored-section .project-head{display:flex;gap:16px;justify-content:space-between;align-items:flex-start;margin:18px 0}
+.restored-section .project-head img{width:145px;height:80px;object-fit:contain;flex:0 0 145px}
+.restored-section .tags{display:flex;flex-wrap:wrap;gap:6px;min-width:0}
+.restored-section .tag{background:#dff0f1;color:#155866;border-radius:18px;padding:4px 9px;font-size:12px;font-weight:700}
+.restored-section .project-card ul{padding-left:20px;margin:16px 0}
+.restored-section .health-log-layout{display:grid;grid-template-columns:minmax(0,1fr) 100px;gap:18px;margin-top:20px}
+.restored-section .project-phone-preview{width:100px;height:230px;object-fit:cover;object-position:top;border-radius:10px;border:1px solid #cadfe1}
+.restored-section .project-link{display:flex;justify-content:center;align-items:center;gap:12px;min-height:48px;padding:12px 16px;background:#246f75;color:#fff;border-radius:8px;text-decoration:none;font-size:15px;font-weight:700;margin-top:18px}
+.restored-section .project-link:hover{background:#18575c}
+.restored-section .project-more{margin-top:16px;border-top:1px solid #d8e5e8;padding-top:8px}
+@media(max-width:800px){.restored-section .skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.restored-section .projects-grid{grid-template-columns:1fr}.restored-section .about-card{grid-template-columns:80px minmax(0,1fr);gap:20px}.restored-section .about-icon{width:80px;height:80px}}
+@media(max-width:500px){.restored-section{padding:24px 0}.restored-section .card{padding:20px 18px}.restored-section .section-title{font-size:26px}.restored-section .about-card{grid-template-columns:1fr;gap:18px}.restored-section .skills-grid{grid-template-columns:1fr}.restored-section .career-card{padding:0}.restored-section .job{padding:20px 18px}.restored-section .job-left{gap:12px;align-items:flex-start}.restored-section .job-icon{width:44px;height:44px;flex-basis:44px}.restored-section .job h3{font-size:19px}.restored-section .company{font-size:16px}.restored-section .job ul{margin-left:0}.restored-section .project-head{flex-wrap:wrap}.restored-section .health-log-layout{grid-template-columns:1fr}.restored-section .project-phone-preview{width:100px;height:180px}.restored-section .health-log-copy .tags{margin-bottom:12px}.restored-section .project-card h3{font-size:22px}}
