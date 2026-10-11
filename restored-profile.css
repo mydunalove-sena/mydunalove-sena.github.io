@@ -25,7 +25,7 @@
 .footer-contact-copy p{font-size:14px;margin:4px 0 0}
 .profile-footer .copyright{font-size:13px;margin:12px 0 0}
 .section-pages[data-current-page="contact"] .footer-contact{display:none}
-@media(max-width:700px){.footer-contact{flex-direction:column;text-align:center}.footer-contact-actions{width:100%}.section-pages .contact-card{padding:32px 20px}.contact-card h2{font-size:28px}}
+@media(max-width:700px){.footer-contact{flex-direction:column;align-items:stretch;text-align:left}.footer-contact-actions{width:100%}.section-pages .contact-card{padding:32px 20px}.contact-card h2{font-size:28px}}
 @media(max-width:400px){.contact-actions{width:100%;flex-direction:column}.contact-actions a,.footer-contact-actions a{width:100%}.profile-page a.contact-email{padding-inline:12px;font-size:14px}}
 .restored-section{padding:30px 0;scroll-margin-top:24px}
 .restored-section>.container{width:100%;margin:0}
