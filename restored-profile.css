@@ -1,4 +1,32 @@
 /* Restore published profile content in the current navy/teal design. */
+.section-pages{min-height:100vh;display:flex;flex-direction:column}
+.section-pages main{flex:1}
+.section-pages main>[data-page][hidden]{display:none!important}
+.section-pages nav a[aria-current="page"]{color:#246f75;text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:8px}
+.section-pages[data-current-page="contact"] main{display:flex;align-items:center;justify-content:center;padding-block:40px}
+.section-pages .contact-card{width:min(640px,100%);margin:0;padding:44px 32px;display:flex;flex-direction:column;gap:16px;text-align:center;background:#eef8f8;border-color:#d8e5e8}
+.contact-card .contact-eyebrow{font-size:13px;font-weight:800;letter-spacing:2px;color:#246f75;margin:0}
+.contact-card h2{font-size:32px;line-height:1.4}
+.contact-card .contact-description{font-size:16px;color:#42576c;margin:0}
+.contact-card .contact-address{font-size:18px;font-weight:700;overflow-wrap:anywhere;margin:4px 0 0}
+.contact-actions,.footer-contact-actions{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px}
+.contact-actions{margin-top:8px}
+.profile-page a.contact-email,.profile-page a.contact-github{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 18px;border-radius:8px;font-size:15px;font-weight:700;text-decoration:none;border:1px solid #246f75;overflow-wrap:anywhere}
+.profile-page a.contact-email{background:#246f75;color:#fff}
+.profile-page a.contact-email:hover{background:#18575c;border-color:#18575c}
+.profile-page a.contact-github{background:#fff;color:#246f75}
+.profile-page a.contact-github:hover{background:#e0f0f0}
+.profile-page a.contact-phone{display:none;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 14px;border:1px solid #246f75;border-radius:8px;background:#246f75;color:#fff;font-size:14px;font-weight:700;text-decoration:none}
+.profile-page a.contact-phone:hover{background:#18575c;border-color:#18575c}
+@media(max-width:700px){.profile-page a.contact-phone{display:inline-flex}}
+.profile-footer{padding:0 0 18px}
+.footer-contact{border-top:1px solid #d8e5e8;padding:24px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;text-align:left}
+.footer-contact-copy strong{font-size:17px;color:#0b2349}
+.footer-contact-copy p{font-size:14px;margin:4px 0 0}
+.profile-footer .copyright{font-size:13px;margin:12px 0 0}
+.section-pages[data-current-page="contact"] .footer-contact{display:none}
+@media(max-width:700px){.footer-contact{flex-direction:column;text-align:center}.footer-contact-actions{width:100%}.section-pages .contact-card{padding:32px 20px}.contact-card h2{font-size:28px}}
+@media(max-width:400px){.contact-actions{width:100%;flex-direction:column}.contact-actions a,.footer-contact-actions a{width:100%}.profile-page a.contact-email{padding-inline:12px;font-size:14px}}
 .restored-section{padding:30px 0;scroll-margin-top:24px}
 .restored-section>.container{width:100%;margin:0}
 .restored-section .section-title{font-size:29px;line-height:1.4;margin:0 0 24px;letter-spacing:-.6px}
