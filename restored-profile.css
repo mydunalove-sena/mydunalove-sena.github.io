@@ -57,6 +57,8 @@
 .restored-section .company{font-size:18px;color:#42576c}
 .restored-section .date{font-size:15px;color:#246f75;font-weight:700;margin-top:4px}
 .restored-section .job ul{margin:18px 0 0 76px;padding-left:20px}
+.restored-section .career-note{margin:18px 0 0 76px;padding-top:14px;border-top:1px solid #d8e5e8;font-size:14px;line-height:1.7;color:#42576c}
+@media(max-width:500px){.restored-section .career-note{margin-left:0}}
 .restored-section li+li{margin-top:6px}
 .restored-section .projects-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .restored-section .project-summary{font-size:14px;color:#42576c;margin:12px 0 18px}
